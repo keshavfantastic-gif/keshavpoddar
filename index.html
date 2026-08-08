@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Keshav Poddar — Computer Science Student & Developer">
+<title>Keshav Poddar — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div><div class="cursor-glow"></div><div class="progress"></div>
+
+<header class="nav">
+  <a class="logo" href="#home">KP<span>.</span></a>
+  <nav><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+
+<div class="menu-overlay">
+  <button class="close-menu">×</button>
+  <div class="menu-inner">
+    <p class="menu-small">KESHAV PODDAR / NAVIGATION</p>
+    <a href="#home">Home <span>01</span></a>
+    <a href="#about">About <span>02</span></a>
+    <a href="#work">Projects <span>03</span></a>
+    <a href="#skills">Skills <span>04</span></a>
+    <a href="#achievements">Achievements <span>05</span></a>
+    <a href="#qualification">Qualification <span>06</span></a>
+    <a href="#connections">Connections <span>07</span></a>
+    <a href="#contact">Contact <span>08</span></a>
+    <div class="menu-folders">
+      <button onclick="openFolder('achievements')">▱ Achievements</button>
+      <button onclick="openFolder('qualification')">▱ Qualification</button>
+      <button onclick="openFolder('connections')">▱ Connections</button>
+    </div>
+  </div>
+</div>
+
+<div class="folder-modal" id="folderModal">
+  <div class="folder-card">
+    <button class="folder-close" onclick="closeFolder()">×</button>
+    <p class="menu-small">KESHAV PODDAR / FOLDER</p>
+    <h2 id="folderTitle">Achievements</h2>
+    <div id="folderContent"></div>
+  </div>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="orb"></div><div class="rings"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow"><i></i> Computer Science Student · Developer</p>
+    <h1>Keshav<br><span>Poddar<span class="blue">.</span></span></h1>
+    <p class="intro">I build simple, thoughtful digital experiences while learning, experimenting, and turning ideas into working software.</p>
+    <div class="actions"><a class="button" href="#work">Explore my work <b>↓</b></a><a class="line-link" href="#contact">Let's talk ↗</a></div>
+  </div>
+  <div class="hero-meta"><span>INDIA</span><span>2026</span></div>
+  <div class="scroll">SCROLL <b>↓</b></div>
+</section>
+
+<section class="section split reveal" id="about">
+ <div class="label">01 / About</div>
+ <div class="content"><p class="kicker">A little about me</p><h2>Curious by nature.<br><em>Builder by choice.</em></h2>
+ <p>I'm Keshav Poddar, a Computer Science student interested in software development, problem solving, databases, and web development.</p>
+ <p>I'm focused on strengthening my fundamentals and building projects that help me learn by actually making things.</p>
+ <div class="stats"><div><strong>01</strong><span>Curiosity</span></div><div><strong>∞</strong><span>Things to learn</span></div><div><strong>24/7</strong><span>Ideas</span></div></div></div>
+</section>
+
+<section class="section reveal" id="work">
+ <div class="label">02 / Selected work</div>
+ <div class="projects">
+  <article class="project"><div class="num">01</div><small>JAVA · SQL</small><h3>Railway<br>Management System</h3><p>Database-driven management of trains, passengers, routes and bookings.</p><a>Academic Project ↗</a></article>
+  <article class="project"><div class="num">02</div><small>WEB · DESIGN</small><h3>Personal<br>Portfolio</h3><p>A minimal personal website designed to showcase my work and journey.</p><a>This website ↗</a></article>
+  <article class="project"><div class="num">03</div><small>JAVA · DSA</small><h3>Programming<br>Projects</h3><p>A growing collection of programs covering OOP, algorithms and problem solving.</p><a>More coming ↗</a></article>
+ </div>
+</section>
+
+<section class="section split reveal" id="skills">
+ <div class="label">03 / Skills</div>
+ <div class="skill-grid">
+  <div class="skill"><b>01</b><h4>Languages</h4><p>Java · Python · C / C++</p></div>
+  <div class="skill"><b>02</b><h4>Web</h4><p>HTML · CSS · JavaScript</p></div>
+  <div class="skill"><b>03</b><h4>Database</h4><p>SQL · MySQL · Database Design</p></div>
+  <div class="skill"><b>04</b><h4>Core</h4><p>OOP · Data Structures · Algorithms</p></div>
+ </div>
+</section>
+
+<section class="section reveal" id="achievements">
+ <div class="label">05 / Achievements</div>
+ <div class="cards">
+  <div class="info-card"><span>01</span><h3>Projects built</h3><p>Academic and personal projects focused on learning through practice.</p></div>
+  <div class="info-card"><span>02</span><h3>Continuous learning</h3><p>Exploring programming, databases, algorithms and modern web development.</p></div>
+  <div class="info-card"><span>03</span><h3>Next milestone</h3><p>More projects, stronger fundamentals and real-world opportunities.</p></div>
+ </div>
+</section>
+
+<section class="section reveal" id="qualification">
+ <div class="label">06 / Qualification</div>
+ <div class="timeline">
+  <div><span>NOW</span><h3>Computer Science</h3><p>Student · Programming · Software Development</p></div>
+  <div><span>FOCUS</span><h3>Technical Growth</h3><p>Java · SQL · Data Structures · Web Development</p></div>
+ </div>
+</section>
+
+<section class="section reveal" id="connections">
+ <div class="label">07 / Connections</div>
+ <div class="connections">
+  <a href="https://github.com/" target="_blank"><span>GH</span><div><b>GitHub</b><small>Projects & code</small></div><strong>↗</strong></a>
+  <a href="https://www.linkedin.com/" target="_blank"><span>in</span><div><b>LinkedIn</b><small>Professional network</small></div><strong>↗</strong></a>
+  <a href="mailto:your@email.com"><span>@</span><div><b>Email</b><small>Let's connect</small></div><strong>↗</strong></a>
+ </div>
+</section>
+
+<section class="section reveal">
+ <div class="label">08 / Currently</div>
+ <div class="currently"><div><i></i> Learning & building</div><p>Working on fundamentals, personal projects, and becoming a better developer one project at a time.</p><span>2026 →</span></div>
+</section>
+
+<section class="contact reveal" id="contact">
+ <p class="eyebrow"><i></i> Get in touch</p><h2>Let's build<br><em>something good.</em></h2>
+ <a class="email" href="mailto:keshav.photoss@email.com">keshav.photoss@email.com ↗</a>
+ <div class="socials"><a href="https://github.com/" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a><button onclick="copyEmail()">Copy email</button></div>
+</section>
+</main>
+
+<footer><span>© 2026 Keshav Poddar</span><span>Built with curiosity <b>✦</b></span></footer>
+
+<script>
+const glow=document.querySelector('.cursor-glow');
+window.addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+window.addEventListener('scroll',()=>{document.querySelector('.progress').style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%'});
+const menu=document.querySelector('.menu-overlay');
+document.querySelector('.menu-btn').onclick=()=>menu.classList.add('open');
+document.querySelector('.close-menu').onclick=()=>menu.classList.remove('open');
+document.querySelectorAll('.menu-overlay a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+function openFolder(type){
+ const title={achievements:'Achievements',qualification:'Qualification',connections:'Connections'}[type];
+ const data={
+ achievements:['✦ Project building','✦ Continuous learning','✦ Programming practice','✦ More milestones coming'],
+ qualification:['▱ Computer Science Student','▱ Java & OOP','▱ SQL & Database Systems','▱ Web Development'],
+ connections:['GH  GitHub','in  LinkedIn','@  Email']
+ };
+ document.getElementById('folderTitle').textContent=title;
+ document.getElementById('folderContent').innerHTML=data[type].map(x=>`<div class="folder-item">${x}<span>↗</span></div>`).join('');
+ document.getElementById('folderModal').classList.add('open');
+}
+function closeFolder(){document.getElementById('folderModal').classList.remove('open')}
+function copyEmail(){navigator.clipboard.writeText('your@email.com');document.querySelector('.socials button').textContent='Copied ✓';setTimeout(()=>document.querySelector('.socials button').textContent='Copy email',1600)}
+</script>
+</body>
+</html>
